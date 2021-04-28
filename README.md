@@ -1,4 +1,4 @@
-# web-teknolojileri-projesi
+# Web-Teknolojileri-Projesi
 
 ###   Projenin Amacı:
 - Kendimi ve yaşadığım yeri tanıtan bir web sitesi geliştirmek
