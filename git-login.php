@@ -5,23 +5,22 @@
 
 	<meta charset="utf-8">
 
-	<!-- Responsive -->
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<!-- Ikon Kutuphanesi -->
+	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-	<!-- Bootstrap CSS -->
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-	<!-- Font -->
+	
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
 	
-	<!-- Css -->
+	
 	<link rel="stylesheet" href="style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-	<!--------------------------------->
+	
 	<title>Web Teknoloji Projesi</title>
 
 </head>
@@ -59,7 +58,7 @@
   		</ul>
   	</li>
   	<li class="nav-item">
-  		<a class="nav-link active" href="Login.html">Giriş Yap</a>
+  		<a class="nav-link" href="Login.html">Giriş Yap</a>
   	</li>
 
   	
