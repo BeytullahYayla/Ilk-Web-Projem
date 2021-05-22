@@ -17,9 +17,9 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
 	
-	
 	<link rel="stylesheet" href="style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
 	
 	<title>Web Teknoloji Projesi</title>
 
@@ -58,7 +58,7 @@
   		</ul>
   	</li>
   	<li class="nav-item">
-  		<a class="nav-link" href="Login.html">Giriş Yap</a>
+  		<a class="nav-link active" href="login.php">Giriş Yap</a>
   	</li>
 
   	
@@ -117,7 +117,7 @@
 		Web-Teknolojileri-Projesi © Beytullah Yayla 2021
 	</footer>
 
-	<!-- BOOTSTRAP -->
+	
 	
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
