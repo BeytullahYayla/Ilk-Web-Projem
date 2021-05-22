@@ -79,6 +79,7 @@
 </nav>
 <br>
 <br>
+
 	
 	<main role="main">
 		<div class="jumbotron  bg-light text-dark text-center ">
@@ -90,7 +91,7 @@
 
 		<div class="container">
 			
-			<form action="git-Login.php" method="POST">
+			<form action="git-login.php" method="POST">
 
 				<div class="form-group">
 					<label for="id">Kullanici Adi</label>
