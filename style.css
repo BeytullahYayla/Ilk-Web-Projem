@@ -1,0 +1,17 @@
+table tbody a{
+	text-decoration: none;
+	color: black;
+}
+#acarlarek,#acarlarek2,#acarlarek3{
+	border-radius: 10px;
+
+}
+#acarlarek:hover,#acarlarek2:hover,#acarlarek3:hover{
+	opacity:0.8;
+}
+p{
+	font-family:Times New Roman;
+}
+h2{
+	font-family:Times New Roman;
+}
