@@ -95,7 +95,8 @@
 			       $_SESSION["pass"] = $pass;
 					
 			       echo("<strong>Giriş Başarılı !!</strong> <br>");
-			       echo("<strong>Hoşgeldiniz</strong>");
+			       echo("<strong>Hoşgeldiniz</strong> <br>");
+			       echo("<strong>b201210008</strong>");
 			
 				}
 			
