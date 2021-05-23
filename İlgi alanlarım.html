@@ -55,7 +55,7 @@
       </ul>
     </li>
     <li class="nav-item">
-      <a class="nav-link " href="login.php">Giriş Yap</a>
+      <a class="nav-link " href="Login.html">Giriş Yap</a>
     </li>
 
     
@@ -75,11 +75,10 @@
 </nav>
 <br>
 <br>
-<br>
     
 <div class="jumbotron alert alert-light text-center ">
     
-      <h2 class="display-4 text-center"><strong>İlgi Alanlarım</strong></h2>
+      <h2 class="display-4 "><strong>İlgi Alanlarım</strong></h2>
  </div>     
       
       
@@ -88,14 +87,59 @@
     <p>Küçüklüğümden beri bilgisayarlara karşı bir ilgim var.İlk bilgisayarla karşılaşmam 3 yaşındayken bilgisayar oyunları ile başladı ve o günden bu güne ilişkimiz hiç kesilmedi.</p>
     <p>Bir gün oyun oynamak için bilgisayarımı açarken klasik siyah ekranı gördüm ve merak etmeye başladım.Acaba arka tarafta neler oluyordu da bu bilgisayar benim kullanımıma hazırlanıyordu.İşte o gün bilgisayarın ve yazılımın büyüsüne kapıldım.Lisede yer aldığım star projesiyle birlikte bu işi yapmam gerektiğine karar verdim.Şu an Sakarya Üniversitesinde Bilgisayar Mühendisliği öğrencisiyim.</p>
     <p>Hedefim bundan önceki bir çok insanın da yaptığı gibi onların bilgi,birikimlerinden yararlanarak ve üstüne her gün koyarak dünyaya ve insanlığa bir iz bırakarak insanlığın yaşam kalitesini ve şartlarını bir nebze olsun artırabilmek.</p>
+    <div id="player"></div>
+
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '270',
+          width: '300',
+          videoId: '1Pve-uH5FSM',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
     <iframe width="300" height="270" src="https://www.youtube.com/embed/vVfgwhHg_HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="300" height="270" src="https://www.youtube.com/embed/8iaTBplV9O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 
     <h2>Müzik</h2>
     <p>Müzik dinlemek aslında benim en keyif adlığım hobim.Sabahtan akşama kadar ne yaparsam yapayım içinde kesinlikle müzik barındırıyor.Aslında tüm müzik türlerini yerine ve zamanına göre seviyorum.Ama en sevdiklerim rock ve indie türleri.</p>
+
+
     <iframe width="300" height="270" src="https://www.youtube.com/embed/VgmAmLQl2KQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="300" height="270" src="https://www.youtube.com/embed/1g4suE6pDKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="300" height="270" src="https://www.youtube.com/embed/DjFDXCtxGfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
    
 
@@ -109,4 +153,4 @@
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
